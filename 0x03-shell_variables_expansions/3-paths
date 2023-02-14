@@ -1,2 +1,2 @@
 #!/bin/bash
-echo ls -d | wc -l
+echo tr ":" "$PRINTENV"
