@@ -1,0 +1,3 @@
+#!/bin/bash
+# printing pid of this script
+echo $$
