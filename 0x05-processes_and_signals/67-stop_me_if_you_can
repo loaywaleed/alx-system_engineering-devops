@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# terminating infinite loop
+kill "$(pgrep -f 7-highlander)"
