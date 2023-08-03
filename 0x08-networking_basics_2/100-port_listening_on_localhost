@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Showing active ips
+nc -l 98
