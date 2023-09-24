@@ -1,11 +1,12 @@
 # puppet config file
-file_line {'IdentityFile':
-  ensure => 'present'
+file_line { 'IdentityFile':
+  ensure => 'present',
   path   => '/etc/ssh/ssh_config',
-  line   => 'IdentityFile ~/.ssh/school'
+  line   => 'IdentityFile ~/.ssh/school',
 }
-file_line {'disable password auth':
+file_line { 'disable password auth':
+  ensure => 'present',
   path => '/etc/ssh/ssh_config',
-  line => 'PasswordAuthentication no'
+  line => 'PasswordAuthentication no',
 }
 
