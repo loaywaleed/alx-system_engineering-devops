@@ -2,5 +2,6 @@
 # script that installs nginx
 sudo apt-get -y update
 sudo apt install -y nginx
+sudo ufw allow "Nginx HTTP"
 echo "Hello World!" > /var/www/html/index.html
 sudo service nginx start
