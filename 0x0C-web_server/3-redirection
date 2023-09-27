@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # script that installs nginx
 sudo apt-get -y update
-sidp apt-get install -y nginx
+sidp apt install -y nginx
 sudo ufw allow "Nginx HTTP"
 str="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/loaywaleed permanent;"
 sudo sed -i "s/server_name _;/$str/" etc/nginx/sites-enabled/default
