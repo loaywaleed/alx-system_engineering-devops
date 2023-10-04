@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # Configuring HAProxy
 
-apt-get -y updatei
+apt-get -y update
 apt-get install --no-install-recommends software-properties-common
 add-apt-repository ppa:vbernat/haproxy-2.4
 
-apt-get install -y haproxy=2.4.\
+apt-get install haproxy=2.4.\*
 
 echo "
 frontend lbnb.tech
