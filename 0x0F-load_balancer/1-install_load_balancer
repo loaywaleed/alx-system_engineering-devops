@@ -1,4 +1,4 @@
-#!/usr/bin/env bsah
+#!/usr/bin/env bash
 # Configuring HAProxy
 
 apt-get -y updatei
