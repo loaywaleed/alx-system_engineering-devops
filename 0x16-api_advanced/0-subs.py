@@ -3,6 +3,7 @@
 
 
 def number_of_subscribers(subreddit):
+    """Method that gets number of subscribers"""
     import requests
     user_agent = {"User-Agent": "anon"}
     api_response = requests.get(
