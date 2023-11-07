@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Top ten hot posts for a given subreddit"""
+"""gets all hot posts for a given subreddit"""
 
 
 def recurse(subreddit, hot_list=[], after=None):
-    """Gets top ten hot posts in a subreddit"""
+    """Gets all hot posts in a subreddit using recursion"""
     import requests
 
     user_agent = {"User-Agent": "anon"}
