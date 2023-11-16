@@ -1,6 +1,6 @@
-# Handling high requests
+# Handling high number of requests
 
-exec {'replace limit':
+exec {'replace':
   provider => shell,
   command  => 'sudo sed -i "s/ULIMIT=\"-n 15\"/ULIMIT=\"-n 4096\"/" /etc/default/nginx',
   before   => Exec['restart'],
